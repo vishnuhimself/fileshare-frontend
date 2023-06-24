@@ -1,8 +1,10 @@
+// App.js
+
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Main from './components/Main';
 import LoginPage from './pages/LoginPage';
+import HomePage from './pages/HomePage';
 import './App.css';
 
 function App() {
@@ -10,7 +12,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Main />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
       </Routes>
     </div>
