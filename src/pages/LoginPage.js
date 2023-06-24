@@ -14,18 +14,31 @@ function LoginPage() {
 
   return (
     <div className="login-container">
+      <div className="login-page-title">
       <h2 className="login-header">Login</h2>
+      <h5 className="login-header-subtext">Welcome back!</h5>
+      </div>
+      <div className='login-from'>
       <form onSubmit={handleSubmit} className="login-form">
-        <label>
-          Username:
-          <input type="text" value={username} onChange={e => setUsername(e.target.value)} required className="input-field"/>
-        </label>
-        <label>
-          Password:
-          <input type="password" value={password} onChange={e => setPassword(e.target.value)} required className="input-field"/>
-        </label>
-        <button type="submit" className="submit-button">Log in</button>
+      <input 
+                type="text" 
+                value={username} 
+                onChange={e => setUsername(e.target.value)} 
+                placeholder="E-mail"
+                required 
+                className="input-field"
+            />
+            <input 
+                type="password" 
+                value={password} 
+                onChange={e => setPassword(e.target.value)} 
+                placeholder="Password"
+                required 
+                className="input-field"
+            />
+            <button type="submit" className="submit-button">Log in</button>
       </form>
+      </div>
     </div>
   );
 }

@@ -37,29 +37,47 @@
   }
 }
 
+.home {
+  text-align: center;
+  padding: 50px;
+}
+
+.home button {
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 1em;
-  background-color: #333;
+  background-color: #007BFF;
+  padding: 10px;
   color: white;
 }
 
 .navbar .site-name {
   font-size: 1.5em;
+  font-weight: bold;
 }
 
-.navbar .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1em;
+.nav-links {
+  list-style-type: none;
 }
 
-.navbar .nav-links a {
+.nav-links li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.nav-links li a {
   color: white;
   text-decoration: none;
-}
-
-.navbar .nav-links a:hover {
-  color: #ddd;
 }
