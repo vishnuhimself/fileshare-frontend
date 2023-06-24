@@ -1,10 +1,15 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+
+import LoginPage from './pages/LoginPage';
 
 function Main() {
   return (
     <main>
-      <h2>Welcome to the file sharing app!</h2>
-      <p>Here we'll have our upload form and file list...</p>
+      <Switch>
+        <Route exact path='/' component={LoginPage} />
+        {/* Add more routes as needed */}
+      </Switch>
     </main>
   );
 }
