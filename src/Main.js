@@ -1,13 +1,13 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import LoginPage from '../pages/LoginPage';
 
 const Main = () => (
-  <Switch>
-    <Route exact path='/' component={LoginPage}></Route>
+  <Routes>
+    <Route path='/' element={<LoginPage />} />
     {/* Add more routes as needed */}
-  </Switch>
+  </Routes>
 );
 
 export default Main;
