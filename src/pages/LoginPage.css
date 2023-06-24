@@ -6,6 +6,37 @@
     height: 100vh;
     background: #f3f3f3;
   }
+
+  .login-wrapper {
+    max-width: 500px;
+    margin: 20px auto; /* Reduced margin-top from 80px to 20px */
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #00000033;
+  }
+
+  login-wrapper input,
+.login-wrapper button {
+  width: 100%; /* Full-width inputs and button */
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.login-wrapper button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.login-wrapper button:hover {
+  opacity: 0.8;
+}
   
   .login-header {
     text-align: center;
