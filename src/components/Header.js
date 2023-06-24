@@ -3,7 +3,7 @@ import React from 'react';
 function Header() {
   return (
     <header>
-      <h1>File Sharing App</h1>
+      <h1><div class='siteTitle'>FileDogg</div></h1>
     </header>
   );
 }
